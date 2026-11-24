@@ -12,11 +12,14 @@ Selecione uma opçãon\n\
 while opçao != 0:
     match opçao:
         case 1:
-            pass
+            livro = input("Informe o nome do livro que deseja adicionar")
+            if livro not in biblioteca:
+                biblioteca.append(livro)
         case 2:
-            pass
+            for b in biblioteca:
+                print ("b")
         case 3:
-            pass
+            qunatidade = len(biblioteca)
         case 4:
             pass
         case 5:
