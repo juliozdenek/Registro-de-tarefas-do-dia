@@ -25,10 +25,14 @@ while opçao != 0:
             print(f"{quantidade}")
         case 4:
             verificar = input("Informe o nome do livro que você deseja verificar: ")
+<<<<<<< HEAD
             for b in biblioteca:
                 if verificar != b:
+=======
+                if verificar in biblioteca:
+>>>>>>> b45f7fe5d5b1f03705e2133c4c5c7fe40687e664
                     print("O Livro está na biblioteca")
-                else:
+                else
                     print("O livro não está na biblioteca")
         case 5:
             remover = input("Escolha o livro que você gostaria de remover: ")
