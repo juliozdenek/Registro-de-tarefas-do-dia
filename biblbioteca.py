@@ -26,7 +26,7 @@ while opçao != 0:
         case 4:
             verificar = input("Informe o nome do livro que você deseja verificar: ")
             for b in biblioteca:
-                if verificar == b:
+                if verificar != b:
                     print("O Livro está na biblioteca")
                 else:
                     print("O livro não está na biblioteca")
@@ -44,4 +44,4 @@ while opçao != 0:
 5 - Remover livro\n\
 0 - Sair\n\
     Selecione uma opçao: "))
-Print ("Programa encerrado, volte sempre!")
+print ("Programa encerrado, volte sempre!")
