@@ -30,7 +30,6 @@ while opçao != 0:
                     print("O Livro está na biblioteca")
                 else:
                     print("O livro não está na biblioteca")
-            pass
         case 5:
             pass
         case _:
