@@ -12,7 +12,7 @@ opçao = int(input("\n\
 while opçao != 0:
     match opçao:
         case 1:
-            livro = input("Informe o nome do livro que deseja adicionar: ")
+            livro = input("Informe o nome do livro que deseja adicionar: ").title().strip()
             if livro not in biblioteca:
                 biblioteca.append(livro)
             else :
@@ -27,14 +27,14 @@ while opçao != 0:
             quantidade = len(biblioteca)
             print(f"A biblioteca tem {quantidade} livros")
         case 4:
-            verificar = input("Informe o nome do livro que você deseja verificar: ")
+            verificar = input("Informe o nome do livro que você deseja verificar: ").title().strip()
             if verificar in biblioteca:
 
                 print("O Livro está na biblioteca")
             else:
                 print("O livro não está na biblioteca")
         case 5:
-            remover = input("Escolha o livro que você gostaria de remover: ")
+            remover = input("Escolha o livro que você gostaria de remover: ").title().strip()
             if remover in biblioteca:
                 biblioteca.remove(remover)
                 print("Livro removido com sucesso!")
