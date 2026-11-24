@@ -18,25 +18,28 @@ while opçao != 0:
             else :
                 print (f"O livro {livro} já existe na biblioteca! ")
         case 2:
-            for b in biblioteca:
-                print (f"{b}")
+            if len(biblioteca) == 0:
+                print("A biblioteca está vazia")
+            else:
+                for b in biblioteca:
+                    print (f"{b}")
         case 3:
             quantidade = len(biblioteca)
-            print(f"{quantidade}")
+            print(f"A biblioteca tem {quantidade} livros")
         case 4:
             verificar = input("Informe o nome do livro que você deseja verificar: ")
-<<<<<<< HEAD
-            for b in biblioteca:
-                if verificar != b:
-=======
-                if verificar in biblioteca:
->>>>>>> b45f7fe5d5b1f03705e2133c4c5c7fe40687e664
-                    print("O Livro está na biblioteca")
-                else
-                    print("O livro não está na biblioteca")
+            if verificar in biblioteca:
+
+                print("O Livro está na biblioteca")
+            else:
+                print("O livro não está na biblioteca")
         case 5:
             remover = input("Escolha o livro que você gostaria de remover: ")
-            biblioteca.remove(remover)
+            if remover in biblioteca:
+                biblioteca.remove(remover)
+                print("Livro removido com sucesso!")
+            else:
+                print("O Livro não está cadastrado.")
     
         case _:
             print ("opção invalida")
