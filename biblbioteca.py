@@ -44,3 +44,4 @@ while opçao != 0:
 5 - Remover livro\n\
 0 - Sair\n\
     Selecione uma opçao: "))
+Print ("Programa encerrado, volte sempre!")
